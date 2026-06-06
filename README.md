@@ -25,6 +25,10 @@ ln -sf ~/Clones/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/Clones/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 ```
 
+### Fonts
+
+[Dank Mono](https://philpl.gumroad.com/l/dank-mono) is a paid font used by Ghostty, Zed, and the terminal prompt. After purchase, install by dropping the `.otf` files into `~/Library/Fonts` (macOS) or `~/.local/share/fonts` (Linux).
+
 ### Zed
 
 ```bash
