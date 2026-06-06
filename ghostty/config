@@ -1,0 +1,39 @@
+# ============================================
+  # Ghostty Terminal - Complete Configuration
+  # ============================================
+  # Reload: Cmd+Shift+, (macOS)
+  # View options: ghostty +show-config --default --docs
+
+
+  # --- Typography ---
+  font-family = "Dank Mono"
+  font-size = 18
+  font-thicken = true
+  adjust-cell-height = 2
+
+
+  # --- Theme and Colors ---
+  # Catppuccin with automatic light/dark switching
+  theme = "Electron Highlighter"
+  # dark:Electron Highlighter
+  # dark:Black Metal (Bathory)
+
+
+  # --- Window and Appearance ---
+  background-opacity = 0.8
+  background-blur-radius = 20
+  macos-titlebar-style = transparent
+  window-padding-x = 20,0
+  window-padding-y = 20
+  window-save-state = always
+  window-theme = auto
+  adjust-cell-height = 8
+  scrollbar = never
+
+
+  # --- Cursor ---
+  cursor-style = block
+  cursor-style-blink = true
+  cursor-opacity = 1
+  cursor-color = #75fbc7
+  shell-integration-features = no-cursor
