@@ -1,5 +1,4 @@
 tap "hashicorp/tap"
-tap "tuist/tuist"
 brew "cocoapods"
 brew "ffmpeg"
 brew "gh"
@@ -40,7 +39,6 @@ cask "antigravity"
 cask "stats"
 cask "tailscale-app"
 cask "temurin@17"
-cask "tuist"
 cask "zoom"
 
 mas "Xcode", id: 497799835
