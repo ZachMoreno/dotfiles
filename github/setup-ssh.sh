@@ -3,7 +3,7 @@
 
 KEY="$HOME/.ssh/id_ed25519"
 EMAIL="${1:-$(git config --global user.email)}"
-MACOS=[[ $(uname) == "Darwin" ]]
+[[ $(uname) == "Darwin" ]] && MACOS=true || MACOS=false
 
 echo "\n🔑 GitHub SSH Setup\n"
 
