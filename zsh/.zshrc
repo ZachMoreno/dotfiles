@@ -15,11 +15,11 @@ if [[ $(uname) == "Darwin" ]]; then
   # Homebrew (must come first so /opt/homebrew/bin is on PATH for everything below)
   eval "$(/opt/homebrew/bin/brew shellenv)"
 
-  export PATH="$HOME/.local/bin:$PATH"
-  export PATH="/Users/zach/.antigravity/antigravity/bin:$PATH"
-  export PATH="/Users/zach/depot_tools:$PATH"
-  export PATH="$HOME/DevTools/flutter/bin:$PATH"
-  export PATH="$PATH:$HOME/.pub-cache/bin"
+  export PATH="$HOME/.local/bin:$PATH"                          # local user binaries
+  export PATH="$HOME/.antigravity/antigravity/bin:$PATH"        # antigravity
+  export PATH="$HOME/depot_tools:$PATH"                         # chromium depot tools
+  export PATH="$HOME/DevTools/flutter/bin:$PATH"                # flutter
+  export PATH="$PATH:$HOME/.pub-cache/bin"                      # dart pub
 
   # Google Cloud SDK
   [ -f '/opt/homebrew/share/google-cloud-sdk/path.zsh.inc' ] && \
