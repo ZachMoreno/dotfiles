@@ -1,29 +1,20 @@
 {
-  "statusLine": {
-    "type": "command",
-    "command": "bash \"/home/zachinspace/.claude/plugins/cache/caveman/caveman/63e797cd753b/hooks/caveman-statusline.sh\""
-  },
+  "agentPushNotifEnabled": true,
+  "effortLevel": "xhigh",
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true,
     "typescript-lsp@claude-plugins-official": true,
     "vercel-plugin@vercel-vercel-plugin": true,
     "caveman@caveman": true,
-    "rust-analyzer-lsp@claude-plugins-official": true
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true
   },
   "extraKnownMarketplaces": {
-    "vercel-vercel-plugin": {
-      "source": {
-        "source": "directory",
-        "path": "/home/zachinspace/.cache/plugins/.install-staging/45644bae9c1ccb93a2233593dff400818d70c739/cursor/repo"
-      }
-    },
     "caveman": {
       "source": {
         "source": "github",
         "repo": "JuliusBrussee/caveman"
       }
     }
-  },
-  "agentPushNotifEnabled": true,
-  "effortLevel": "xhigh"
+  }
 }

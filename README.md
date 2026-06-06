@@ -1,54 +1,40 @@
 # dotfiles
 
-Personal config for Claude Code, Ghostty, and Zsh.
+Personal config for Zsh, Ghostty, Zed, Cursor, VSCode, and Claude Code.
 
 ## Setup
 
 ```bash
 git clone https://github.com/ZachMoreno/dotfiles.git ~/Clones/dotfiles
 cd ~/Clones/dotfiles
+./install.sh
 ```
 
-### Claude
+`install.sh` symlinks everything into place and is safe to re-run.
+
+## Fonts
+
+[Dank Mono](https://philpl.gumroad.com/l/dank-mono) is a paid font used across Ghostty, Zed, Cursor, and VSCode. After purchase, install by dropping the `.otf` files into `~/Library/Fonts` (macOS) or `~/.local/share/fonts` (Linux).
+
+## Brew
+
+Restore all packages, casks, and VSCode extensions:
 
 ```bash
-ln -sf ~/Clones/dotfiles/claude/skills/blt ~/.claude/skills/blt
-ln -sf ~/Clones/dotfiles/claude/settings.json ~/.claude/settings.json
+brew bundle --file=Brewfile
 ```
 
-> Note: `settings.json` has hardcoded `/home/zachinspace` paths. Update if username differs.
+## What's included
 
-### Zsh / Powerlevel10k
-
-```bash
-ln -sf ~/Clones/dotfiles/zsh/.zshrc ~/.zshrc
-ln -sf ~/Clones/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
-```
-
-### Fonts
-
-[Dank Mono](https://philpl.gumroad.com/l/dank-mono) is a paid font used by Ghostty, Zed, and the terminal prompt. After purchase, install by dropping the `.otf` files into `~/Library/Fonts` (macOS) or `~/.local/share/fonts` (Linux).
-
-### Zed
-
-```bash
-ln -sf ~/Clones/dotfiles/zed/settings.json ~/.config/zed/settings.json
-```
-
-### Ghostty
-
-**macOS:**
-```bash
-ln -sf ~/Clones/dotfiles/ghostty/config \
-  ~/Library/Application\ Support/com.mitchellh.ghostty/config.ghostty
-```
-
-**Linux:**
-```bash
-mkdir -p ~/.config/ghostty
-ln -sf ~/Clones/dotfiles/ghostty/config ~/.config/ghostty/config
-```
-
-## Claude Skills
-
-- **blt** — Build-Test-Lint health check. Fixes errors, outputs a conventional commit message.
+| Path in repo | Symlinked to |
+|---|---|
+| `zsh/.zshrc` | `~/.zshrc` |
+| `zsh/.p10k.zsh` | `~/.p10k.zsh` |
+| `git/.gitconfig` | `~/.gitconfig` |
+| `ghostty/config` | `~/Library/Application Support/com.mitchellh.ghostty/config.ghostty` |
+| `zed/settings.json` | `~/.config/zed/settings.json` |
+| `cursor/settings.json` | `~/Library/Application Support/Cursor/User/settings.json` |
+| `cursor/keybindings.json` | `~/Library/Application Support/Cursor/User/keybindings.json` |
+| `vscode/settings.json` | `~/Library/Application Support/Code/User/settings.json` |
+| `claude/settings.json` | `~/.claude/settings.json` |
+| `claude/skills/blt` | `~/.claude/skills/blt` |

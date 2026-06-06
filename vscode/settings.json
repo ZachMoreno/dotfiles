@@ -1,0 +1,52 @@
+{
+    "workbench.colorTheme": "SynthWave '84",
+    "breadcrumbs.enabled": false,
+    "git.autofetch": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.fontSize": 18,
+    "editor.fontFamily": "'Dank Mono', Menlo, Monaco, 'Courier New', monospace",
+    "editor.accessibilitySupport": "off",
+    "terminal.integrated.fontFamily": "Dank Mono",
+    "terminal.integrated.fontSize": 20,
+    "workbench.settings.applyToAllProfiles": [
+        "terminal.integrated.fontSize",
+        "terminal.integrated.fontFamily"
+    ],
+    "css.enabledLanguages": [
+        "html",
+        "typescriptreact"
+    ],
+    "accessibility.dimUnfocused.opacity": 0.7,
+    "synthwave84.brightness": 1,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "csv": false
+    },
+    "githubPullRequests.pullBranch": "never",
+    "nxConsole.showNodeVersionOnStartup": false,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
+}
