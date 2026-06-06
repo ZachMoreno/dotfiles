@@ -18,7 +18,6 @@ if [[ $(uname) == "Darwin" ]]; then
   export PATH="$HOME/.local/bin:$PATH"                          # local user binaries
   export PATH="$HOME/.antigravity/antigravity/bin:$PATH"        # antigravity
   export PATH="$HOME/depot_tools:$PATH"                         # chromium depot tools
-  export PATH="$HOME/DevTools/flutter/bin:$PATH"                # flutter
   export PATH="$PATH:$HOME/.pub-cache/bin"                      # dart pub
 
   # Google Cloud SDK
@@ -47,7 +46,7 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # z (directory jumper)
-[ -f ~/DevTools/z-master/z.sh ] && . ~/DevTools/z-master/z.sh
+[ -f /opt/homebrew/etc/profile.d/z.sh ] && . /opt/homebrew/etc/profile.d/z.sh
 
 # NVM
 export NVM_DIR="$HOME/.nvm"

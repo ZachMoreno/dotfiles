@@ -16,6 +16,20 @@ cd ~/Clones/dotfiles
 
 [Dank Mono](https://philpl.gumroad.com/l/dank-mono) is a paid font used across Ghostty, Zed, Cursor, and VSCode. After purchase, install by dropping the `.otf` files into `~/Library/Fonts` (macOS) or `~/.local/share/fonts` (Linux).
 
+## GitHub SSH
+
+```bash
+./github/setup-ssh.sh
+```
+
+Generates an ed25519 key, adds it to the agent, copies it to your clipboard, and opens GitHub's SSH settings page. Run it once on a new machine. Optionally pass an email: `./github/setup-ssh.sh you@example.com`
+
+## macOS settings
+
+```bash
+./macos.sh
+```
+
 ## Brew
 
 Restore all packages, casks, and VSCode extensions:

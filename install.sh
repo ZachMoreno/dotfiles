@@ -9,6 +9,9 @@ link() {
   echo "  $2"
 }
 
+echo "\nDirectories"
+mkdir -p "$HOME/Clones" && echo "  ~/Clones"
+
 echo "\nZsh"
 link "$DOTFILES/zsh/.zshrc"   "$HOME/.zshrc"
 link "$DOTFILES/zsh/.p10k.zsh" "$HOME/.p10k.zsh"
@@ -38,6 +41,9 @@ if [[ $(uname) == "Darwin" ]]; then
 
   echo "\nBrew"
   echo "  Run: brew bundle --file=$DOTFILES/Brewfile"
+
+  echo "\nmacOS"
+  "$DOTFILES/macos.sh"
 fi
 
 echo "\nDone."
