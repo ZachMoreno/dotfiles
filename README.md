@@ -25,6 +25,12 @@ ln -sf ~/Clones/dotfiles/zsh/.zshrc ~/.zshrc
 ln -sf ~/Clones/dotfiles/zsh/.p10k.zsh ~/.p10k.zsh
 ```
 
+### Zed
+
+```bash
+ln -sf ~/Clones/dotfiles/zed/settings.json ~/.config/zed/settings.json
+```
+
 ### Ghostty
 
 **macOS:**
