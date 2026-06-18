@@ -20,7 +20,7 @@ defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true      # 
 
 echo "Keyboard..."
 defaults write NSGlobalDomain KeyRepeat -int 1
-defaults write NSGlobalDomain InitialKeyRepeat -int 0
+defaults write NSGlobalDomain InitialKeyRepeat -int 68 # lower is faster
 defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticCapitalizationEnabled -bool false
 defaults write NSGlobalDomain NSAutomaticDashSubstitutionEnabled -bool false
